@@ -36,23 +36,7 @@ def generate_barcode_user_png(phone) -> str:
     locate_user_barcode(generate_code,'.png')
     return str(generate_code)
 
-@csrf_exempt
-def user_list(request):
-    if request.method == 'GET':
-        query_set = User.objects.all()
-        serializer = UserSerializer(query_set, many=True)
-        return JsonResponse(serializer.data, safe=False)
 
-    elif request.method == 'POST':
-        data = JSONParser().parse(request)
-        serializer = UserSerializer(data=data)
-        if serializer.is_valid():
-            serializer.save()
-            return JsonResponse(serializer.data, status=201)
-        return JsonResponse(serializer.errors, status=400)
-
-@csrf_exempt
-def user(request, pk):
     obj = User.objects.get(pk=pk)
 
     if request.method == 'GET':
@@ -70,7 +54,7 @@ def user(request, pk):
     elif request.method == 'DELETE':
         obj.delete()
         return HttpResponse(status=204)
-    
+
 @api_view(['POST'])
 @csrf_exempt
 def login(request):
@@ -98,7 +82,8 @@ def login(request):
                     obj = User.objects.get(phone=search_phone)
                     dummy_data = {
                         'name' : obj.name,
-                        'barcode' : obj.barcode_id
+                        'barcode' : "http://pwnable.co.kr:8000/barcode_user/"+str(obj.barcode_id)+".png",
+                        'barcode_id' : str(obj.barcode_id)
                     }
                     return JsonResponse(dummy_data, status=200)
                 else :
