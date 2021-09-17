@@ -8,6 +8,7 @@ from barcode import EAN13
 from barcode.writer import ImageWriter
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+import hashlib
 import logging
 import random
 import shutil
@@ -29,7 +30,7 @@ def locate_user_barcode(generate_code,type):
 
 #Generate barcode for User
 def generate_barcode_user_png(phone) -> str:
-    opt ={"module_width":0.20, "module_height":10, "font_size": 0, "text_distance": -3, "quiet_zone": 1}
+    opt ={"font_size": 0, "text_distance": 3, "quiet_zone": 1}
     generate_num = generate_number_user(phone)
     generate_code = EAN13(generate_num, writer=ImageWriter())
     generate_code.save(generate_code, opt)
@@ -74,11 +75,13 @@ def login(request):
         data = JSONParser().parse(request)
         search_phone = data['phone']
         search_password = data['password']
+        encoded_loginPW = search_password.encode()
+        encrypted_loginPW = hashlib.sha256(encoded_loginPW).hexdigest()
         logging.info("[login] " + str(data))
         try :
             obj = User.objects.get(phone=search_phone)
             if search_phone == obj.phone:
-                if(obj.password == search_password) :
+                if(obj.password == encrypted_loginPW) :
                     obj = User.objects.get(phone=search_phone)
                     dummy_data = {
                         'name' : obj.name,
@@ -109,29 +112,34 @@ def register(request) :
     ---
     '''
     if request.method == 'POST':
-        logging.info("[register] " + str(data))
         data = JSONParser().parse(request)
         search_name = data['name']
         search_phone = data['phone']
         search_password = data['password']
-        search_count = 0
-        search_stamp = 0
-        search_isBlocked = False
-        search_uid = uuid.uuid4()
-        search_coupon = 0
-        user = User(
-            name = search_name,
-            password = search_password,
-            phone = search_phone,
-            count = search_count,
-            stamp = search_stamp,
-            isBlocked = search_isBlocked,
-            uid = search_uid,
-            coupon = search_coupon,
-            barcode_id = generate_barcode_user_png(search_phone)
+        encoded_pw = search_password.encode()
+        encrypted_pw = hashlib.sha256(encoded_pw).hexdigest()
+        if User.objects.filter(phone=search_phone).exists() :
+            return HttpResponse("already exist", status=400)
+        else :
+            logging.info("[register] " + str(data))
+            search_count = 0
+            search_stamp = 0
+            search_isBlocked = False
+            search_uid = uuid.uuid4()
+            search_coupon = 0
+            user = User(
+                name = search_name,
+                password = encrypted_pw,
+                phone = search_phone,
+                count = search_count,
+                stamp = search_stamp,
+                isBlocked = search_isBlocked,
+                uid = search_uid,
+                coupon = search_coupon,
+                barcode_id = generate_barcode_user_png(search_phone)
             )
-        user.save()
-        return HttpResponse(status=200)
+            user.save()
+            return HttpResponse(status=200)
     else:
         return HttpResponse(status=400)
 
@@ -208,7 +216,6 @@ def market_rent(requests) :
     HttpResponse(200/400)
     ---
     '''
-    logging.info("[market_rent] " + str(data))
     if requests.method == 'POST':
         data = JSONParser().parse(requests)
         print(data)
