@@ -8,6 +8,7 @@ from barcode import EAN13
 from barcode.writer import ImageWriter
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
+import logging
 import random
 import shutil
 import uuid
@@ -15,8 +16,6 @@ import datetime
 
 src = './'
 dir_u = './barcode_user/'
-
-
 
 def generate_number_user(phone) -> str:
     generate_number = phone
@@ -30,7 +29,7 @@ def locate_user_barcode(generate_code,type):
 
 #Generate barcode for User
 def generate_barcode_user_png(phone) -> str:
-    opt ={"module_width":0.35, "module_height":10, "font_size": 0, "text_distance": -3, "quiet_zone": 1}
+    opt ={"module_width":0.20, "module_height":10, "font_size": 0, "text_distance": -3, "quiet_zone": 1}
     generate_num = generate_number_user(phone)
     generate_code = EAN13(generate_num, writer=ImageWriter())
     generate_code.save(generate_code, opt)
@@ -91,12 +90,17 @@ def login(request):
         data = JSONParser().parse(request)
         search_phone = data['phone']
         search_password = data['password']
+        logging.info("[login] " + str(data))
         try :
             obj = User.objects.get(phone=search_phone)
             if search_phone == obj.phone:
                 if(obj.password == search_password) :
                     obj = User.objects.get(phone=search_phone)
-                    return HttpResponse(obj.name, status=200)
+                    dummy_data = {
+                        'name' : obj.name,
+                        'barcode' : obj.barcode_id
+                    }
+                    return JsonResponse(dummy_data, status=200)
                 else :
                     return HttpResponse(status=400)
             else:
@@ -120,6 +124,7 @@ def register(request) :
     ---
     '''
     if request.method == 'POST':
+        logging.info("[register] " + str(data))
         data = JSONParser().parse(request)
         search_name = data['name']
         search_phone = data['phone']
@@ -137,10 +142,10 @@ def register(request) :
             stamp = search_stamp,
             isBlocked = search_isBlocked,
             uid = search_uid,
-            coupon = search_coupon
+            coupon = search_coupon,
+            barcode_id = generate_barcode_user_png(search_phone)
             )
         user.save()
-        generate_barcode_user_png(search_phone)
         return HttpResponse(status=200)
     else:
         return HttpResponse(status=400)
@@ -167,6 +172,7 @@ def market(request) :
     ---
     '''
     if request.method == 'GET':
+        logging.info("[market] request market data")
         obj = Market.objects.all()
         serializer = MarketSerializer(obj, many=True)
         return JsonResponse(serializer.data, safe=False)
@@ -193,6 +199,7 @@ def history(request) :
     ---
     '''
     if request.method == 'GET':
+        logging.info("[history] request history data")
         obj = History.objects.all()
         serializer = HistorySerializer(obj, many=True)
         return JsonResponse(serializer.data, safe=False)
@@ -214,6 +221,7 @@ def market_rent(requests) :
     HttpResponse(200/400)
     ---
     '''
+    logging.info("[market_rent] " + str(data))
     if requests.method == 'POST':
         data = JSONParser().parse(requests)
         print(data)
@@ -233,7 +241,8 @@ def market_rent(requests) :
             history.save()
             ecobag.save()
             market.save()
-            print("sueccess return")
+            logging.info("[market_rent] user \"" + str(user.uid) + "\" return \"" + str(search_Eid) + "\" at " + str(market.marketName))
+            logging.info("[market_rent] sueccess return")
             return HttpResponse(status=200)
         except :
             ecobag.status = "Renting"
@@ -248,45 +257,8 @@ def market_rent(requests) :
             history.save()
             ecobag.save()
             market.save()
-            print("sueccess rent")
+            logging.info("[market_rent] user \"" + str(user.uid) + "\" rent \"" + str(search_Eid) + "\" at " + str(market.marketName)) 
+            logging.info("[market_rent] success rent")
             return HttpResponse(status=200)
-    else :
-        return HttpResponse(status=400)
-
-@api_view(['POST'])
-@csrf_exempt
-def market_return(requests) :
-    '''
-    # Parameters (Request)
-    ---
-    ## mid(string) - markte unique id
-    ## phone(string) - user phone number
-    ## eid(string) - ecobag unique id
-    ---
-    # Parameters (Response)
-    ---
-    HttpResponse(200/400)
-    ---
-    '''
-    if requests.method == 'POST':
-        data = JSONParser().parse(requests)
-        search_Mid = data['Mid']
-        search_phone = data['phone']
-        search_Eid = data['Eid']
-        ecobag = Ecobag.objects.get(eid=search_Eid)
-        market = Market.objects.get(mid=search_Mid)
-        user = User.objects.get(phone=search_phone)
-        ecobag.status = "Having"
-        ecobag.market = market.marketName
-        history = History.objects.get(uid = user.uid, eid=search_Eid, returnMarket="0")
-        history.returnMarket = market.marketName
-        market.stock = market.stock + 1
-        user.count = user.count - 1
-        user.updatedAt = datetime.datetime.now()
-        user.save()
-        history.save()
-        ecobag.save()
-        market.save()
-        return HttpResponse(status=200)
     else :
         return HttpResponse(status=400)

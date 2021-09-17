@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
+from os.path import join
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -110,6 +111,48 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    # 형식정의
+    'formatters': {
+        'format1': {'format': '[%(asctime)s] %(levelname)s %(message)s','datefmt': "%Y-%m-%d %H:%M:%S"},
+        'format2': {'format': '%(levelname)s %(message)s [%(name)s:%(lineno)s]'},
+    },    
+    'handlers': {
+        # 파일저장
+        'file': {
+                'level': 'INFO',
+                'class': 'logging.handlers.RotatingFileHandler',
+                'filename': os.path.join(BASE_DIR, 'logs/paybag.log'),
+                'encoding': 'UTF-8',
+                'maxBytes': 1024 * 1024 * 5,  # 5 MB
+                'backupCount': 5,
+                'formatter': 'format1',
+                },
+        # 콘솔(터미널)에 출력
+        'console': {'level': 'INFO','class': 'logging.StreamHandler','formatter': 'format2',
+        },
+    },
+    'loggers': {
+        #종류
+        'django.server': {
+            'handlers': ['file','console'],
+            'propagate': False,
+            'level': 'INFO',
+        },
+        'django.request': {
+            'handlers':['file','console'],
+            'propagate': False,
+            'level':'DEBUG',
+        },        
+        '': {
+            'level': 'DEBUG',
+            'handlers': ['file'],
+            'propagate': True,
+        },
+    },
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/

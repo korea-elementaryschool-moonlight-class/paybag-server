@@ -1,0 +1,239 @@
+[2021-09-17 16:48:29] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:48:37] INFO checkuserlevel
+[2021-09-17 16:48:37] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:48:46] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:48:48] INFO Watching for file changes with StatReloader
+[2021-09-17 16:48:50] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:49:10] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:49:13] INFO Watching for file changes with StatReloader
+[2021-09-17 16:49:31] INFO /home/m0nd2y/paybag-server/paybag_api/main/urls.py changed, reloading.
+[2021-09-17 16:49:32] INFO Watching for file changes with StatReloader
+[2021-09-17 16:49:46] INFO /home/m0nd2y/paybag-server/paybag_api/paybag_api/settings.py changed, reloading.
+[2021-09-17 16:49:47] INFO Watching for file changes with StatReloader
+[2021-09-17 16:50:10] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:50:13] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:51:11] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:51:13] INFO Watching for file changes with StatReloader
+[2021-09-17 16:51:28] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:51:29] INFO Watching for file changes with StatReloader
+[2021-09-17 16:51:36] WARNING Bad Request: /login/
+[2021-09-17 16:51:36] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:51:45] WARNING Bad Request: /login/
+[2021-09-17 16:51:45] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:51:51] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:51:52] INFO Watching for file changes with StatReloader
+[2021-09-17 16:51:54] WARNING Bad Request: /login/
+[2021-09-17 16:51:54] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:52:02] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:52:04] INFO Watching for file changes with StatReloader
+[2021-09-17 16:52:06] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:52:15] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:52:17] INFO Watching for file changes with StatReloader
+[2021-09-17 16:52:19] WARNING Bad Request: /login/
+[2021-09-17 16:52:19] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:52:21] WARNING Bad Request: /login/
+[2021-09-17 16:52:21] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:52:34] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:52:36] INFO Watching for file changes with StatReloader
+[2021-09-17 16:52:43] WARNING Bad Request: /login/
+[2021-09-17 16:52:43] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:53:15] WARNING Bad Request: /login/
+[2021-09-17 16:53:15] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:53:16] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:53:18] INFO Watching for file changes with StatReloader
+[2021-09-17 16:53:19] WARNING Bad Request: /login/
+[2021-09-17 16:53:19] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:53:28] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:53:30] INFO Watching for file changes with StatReloader
+[2021-09-17 16:53:33] WARNING Bad Request: /login/
+[2021-09-17 16:53:33] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:53:54] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:53:56] INFO Watching for file changes with StatReloader
+[2021-09-17 16:54:29] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:54:30] INFO Watching for file changes with StatReloader
+[2021-09-17 16:54:32] WARNING Bad Request: /login/
+[2021-09-17 16:54:32] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:54:33] WARNING Bad Request: /login/
+[2021-09-17 16:54:33] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:55:14] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:55:16] INFO Watching for file changes with StatReloader
+[2021-09-17 16:55:22] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:55:24] INFO Watching for file changes with StatReloader
+[2021-09-17 16:55:27] INFO login
+[2021-09-17 16:55:27] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:55:35] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:55:37] INFO Watching for file changes with StatReloader
+[2021-09-17 16:55:39] WARNING Bad Request: /login/
+[2021-09-17 16:55:39] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:55:48] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:55:49] INFO Watching for file changes with StatReloader
+[2021-09-17 16:55:56] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:55:59] INFO Watching for file changes with StatReloader
+[2021-09-17 16:56:01] ERROR Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 93, in login
+    logging.info("login" + data)
+TypeError: can only concatenate str (not "dict") to str
+[2021-09-17 16:56:01] ERROR "POST /login/ HTTP/1.1" 500 95064
+[2021-09-17 16:56:03] ERROR Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 93, in login
+    logging.info("login" + data)
+TypeError: can only concatenate str (not "dict") to str
+[2021-09-17 16:56:03] ERROR "POST /login/ HTTP/1.1" 500 95064
+[2021-09-17 16:56:30] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:56:32] INFO Watching for file changes with StatReloader
+[2021-09-17 16:56:35] ERROR Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 93, in login
+    logging.info("login" + eval(data))
+TypeError: eval() arg 1 must be a string, bytes or code object
+[2021-09-17 16:56:35] ERROR "POST /login/ HTTP/1.1" 500 95058
+[2021-09-17 16:56:37] ERROR Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 93, in login
+    logging.info("login" + eval(data))
+TypeError: eval() arg 1 must be a string, bytes or code object
+[2021-09-17 16:56:37] ERROR "POST /login/ HTTP/1.1" 500 95058
+[2021-09-17 16:57:11] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:57:12] INFO Watching for file changes with StatReloader
+[2021-09-17 16:57:14] INFO login{'phone': '01092939495', 'password': 'qwer1234'}
+[2021-09-17 16:57:14] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:57:26] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:57:28] INFO Watching for file changes with StatReloader
+[2021-09-17 16:57:33] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:57:35] INFO Watching for file changes with StatReloader
+[2021-09-17 16:57:37] INFO [login] {'phone': '01092939495', 'password': 'qwer1234'}
+[2021-09-17 16:57:37] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:57:43] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:57:44] INFO Watching for file changes with StatReloader
+[2021-09-17 16:57:46] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:57:50] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:58:00] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:59:09] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:59:11] INFO Watching for file changes with StatReloader
+[2021-09-17 16:59:15] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:59:17] INFO Watching for file changes with StatReloader
+[2021-09-17 16:59:19] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:59:21] INFO Watching for file changes with StatReloader
+[2021-09-17 16:59:25] WARNING Bad Request: /login/
+[2021-09-17 16:59:25] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 16:59:39] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 16:59:41] INFO Watching for file changes with StatReloader
+[2021-09-17 16:59:43] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 16:59:59] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:00:02] INFO Watching for file changes with StatReloader
+[2021-09-17 17:00:04] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 17:00:07] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 17:00:13] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:00:16] INFO Watching for file changes with StatReloader
+[2021-09-17 17:00:19] INFO [login] {'phone': '01092939495', 'password': 'qwer1234'}
+[2021-09-17 17:00:19] INFO "POST /login/ HTTP/1.1" 200 58
+[2021-09-17 17:01:35] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:01:37] INFO Watching for file changes with StatReloader
+[2021-09-17 17:02:14] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:02:16] INFO Watching for file changes with StatReloader
+[2021-09-17 17:02:40] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:02:42] INFO Watching for file changes with StatReloader
+[2021-09-17 17:02:51] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:02:54] INFO Watching for file changes with StatReloader
+[2021-09-17 17:02:56] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:02:58] INFO Watching for file changes with StatReloader
+[2021-09-17 17:03:01] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:03:03] INFO Watching for file changes with StatReloader
+[2021-09-17 17:04:26] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:04:29] INFO Watching for file changes with StatReloader
+[2021-09-17 17:04:58] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:05:00] INFO Watching for file changes with StatReloader
+[2021-09-17 17:05:06] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:05:09] INFO Watching for file changes with StatReloader
+[2021-09-17 17:05:19] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:05:22] INFO Watching for file changes with StatReloader
+[2021-09-17 17:05:32] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:05:35] INFO Watching for file changes with StatReloader
+[2021-09-17 17:05:37] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:05:39] INFO Watching for file changes with StatReloader
+[2021-09-17 17:05:41] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:05:42] INFO Watching for file changes with StatReloader
+[2021-09-17 17:06:02] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:06:05] INFO Watching for file changes with StatReloader

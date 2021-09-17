@@ -12,6 +12,5 @@ urlpatterns = [
     path('history/', views.history),
     path('market/', views.market),
     path('market_rent/', views.market_rent),
-    path('market_return/', views.market_return),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
