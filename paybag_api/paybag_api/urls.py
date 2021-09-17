@@ -25,4 +25,5 @@ from django.urls import re_path
 urlpatterns = [
     path('', include('main.urls'), name='main'),
     path('admin/', admin.site.urls),
+    re_path(r'^barcode_user/(?P<path>.*)$', serve, {'document_root':settings.MEDIA_ROOT}),
 ]
