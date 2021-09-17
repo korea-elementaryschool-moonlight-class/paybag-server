@@ -13,8 +13,7 @@ import logging
 import random
 import shutil
 import uuid
-import datetime
-
+from django.utils import timezone
 src = './'
 dir_u = './barcode_user/'
 
@@ -228,11 +227,15 @@ def market_rent(requests) :
         try :
             history = History.objects.get(uid = user.uid, eid=search_Eid, returnMarket="미정")
             history.returnMarket = market.marketName
+            history.updatedAt = timezone.now()
             market.stock = market.stock + 1
             user.count = user.count - 1
-            user.updatedAt = datetime.datetime.now()
+            user.updatedAt = timezone.now()
             user.save()
             history.save()
+            ecobag.status = "Having"
+            ecobag.market  = market.marketName
+            ecobag.uid = "미정"
             ecobag.save()
             market.save()
             logging.info("[market_rent] user \"" + str(user.uid) + "\" return \"" + str(search_Eid) + "\" at " + str(market.marketName))
@@ -240,19 +243,24 @@ def market_rent(requests) :
             return HttpResponse(status=200)
         except :
             ecobag.status = "Renting"
+            ecobag.market  = "미정"
+            ecobag.uid  = user.uid
             ecobag.lastMarket = market.marketName
-            history = History(uid=user.uid, eid=search_Eid, rentMarket=market.marketName, returnMarket="미정", updatedAt=datetime.datetime.now())
-            market.count = market.count + 1
-            market.stock = market.stock - 1
-            user.count = user.count + 1
-            user.stamp = user.stamp + 1
-            user.updatedAt = datetime.datetime.now()
-            user.save()
-            history.save()
-            ecobag.save()
-            market.save()
-            logging.info("[market_rent] user \"" + str(user.uid) + "\" rent \"" + str(search_Eid) + "\" at " + str(market.marketName)) 
-            logging.info("[market_rent] success rent")
-            return HttpResponse(status=200)
+            history = History(uid=user.uid, eid=search_Eid, rentMarket=market.marketName, returnMarket="미정", updatedAt=timezone.now())
+            if(market.stock > 0) :
+                market.count = market.count + 1
+                market.stock = market.stock - 1
+                user.count = user.count + 1
+                user.stamp = user.stamp + 1
+                user.updatedAt = timezone.now()
+                user.save()
+                history.save()
+                ecobag.save()
+                market.save()
+                logging.info("[market_rent] user \"" + str(user.uid) + "\" rent \"" + str(search_Eid) + "\" at " + str(market.marketName)) 
+                logging.info("[market_rent] success rent")
+                return HttpResponse(status=200)
+            else :
+                return HttpResponse("no stock :(",status=400)
     else :
         return HttpResponse(status=400)

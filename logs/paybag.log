@@ -1247,3 +1247,591 @@ main.models.Ecobag.DoesNotExist: Ecobag matching query does not exist.
 [2021-09-17 19:13:29] INFO Watching for file changes with StatReloader
 [2021-09-17 19:13:38] INFO [market] request market data
 [2021-09-17 19:13:38] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:13:53] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:13:53] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:14:52] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:14:52] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:15:03] INFO [market] request market data
+[2021-09-17 19:15:03] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:15:20] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:15:20] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:16:19] WARNING Bad Request: /register/
+[2021-09-17 19:16:19] WARNING "POST /register/ HTTP/1.1" 400 13
+[2021-09-17 19:16:22] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:16:24] INFO Watching for file changes with StatReloader
+[2021-09-17 19:16:32] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:16:33] INFO Watching for file changes with StatReloader
+[2021-09-17 19:16:58] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:16:59] INFO Watching for file changes with StatReloader
+[2021-09-17 19:17:04] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:17:06] INFO Watching for file changes with StatReloader
+[2021-09-17 19:17:20] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:17:21] INFO Watching for file changes with StatReloader
+[2021-09-17 19:17:54] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:17:55] INFO Watching for file changes with StatReloader
+[2021-09-17 19:17:58] INFO "GET /admin/main/user/ HTTP/1.1" 200 7828
+[2021-09-17 19:17:59] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:18:02] INFO "POST /admin/main/user/ HTTP/1.1" 200 6144
+[2021-09-17 19:18:03] INFO "POST /admin/main/user/ HTTP/1.1" 302 0
+[2021-09-17 19:18:04] INFO "GET /admin/main/user/ HTTP/1.1" 200 7748
+[2021-09-17 19:18:04] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:18:12] INFO [register] {'name': '권태훈2', 'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:18:12] INFO "POST /register/ HTTP/1.1" 200 0
+[2021-09-17 19:18:19] INFO "GET /admin/main/user/ HTTP/1.1" 200 7828
+[2021-09-17 19:18:19] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:18:21] INFO "GET /admin/main/user/19/change/ HTTP/1.1" 200 11606
+[2021-09-17 19:18:21] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:18:24] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:18:24] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:18:31] INFO "GET /admin/main/user/ HTTP/1.1" 200 7828
+[2021-09-17 19:18:41] INFO [login] {'phone': '01092939495', 'password': 'qwer1234'}
+[2021-09-17 19:18:41] WARNING Bad Request: /login/
+[2021-09-17 19:18:41] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 19:18:48] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:18:49] INFO Watching for file changes with StatReloader
+[2021-09-17 19:18:55] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:18:55] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:18:56] INFO "GET /admin/main/ecobag/4/change/ HTTP/1.1" 200 10152
+[2021-09-17 19:18:57] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:18:57] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:18:57] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:18:58] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:19:00] INFO "GET /admin/main/ecobag/3/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:19:00] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:04] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:19:06] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:19:06] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:07] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:19:09] INFO "GET /admin/main/history/ HTTP/1.1" 200 7879
+[2021-09-17 19:19:09] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:11] INFO "GET /admin/main/history/14/change/ HTTP/1.1" 200 9323
+[2021-09-17 19:19:11] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:13] INFO "GET /admin/main/history/ HTTP/1.1" 200 7879
+[2021-09-17 19:19:14] INFO "GET /admin/main/history/13/change/ HTTP/1.1" 200 9322
+[2021-09-17 19:19:14] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:15] INFO "GET /admin/main/history/ HTTP/1.1" 200 7879
+[2021-09-17 19:19:17] INFO "GET /admin/main/history/12/change/ HTTP/1.1" 200 9318
+[2021-09-17 19:19:17] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:18] INFO "GET /admin/main/history/ HTTP/1.1" 200 7879
+[2021-09-17 19:19:19] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:19:23] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:19:23] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:26] INFO "POST /admin/main/ecobag/5/change/ HTTP/1.1" 302 0
+[2021-09-17 19:19:27] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7844
+[2021-09-17 19:19:27] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:29] INFO "GET /admin/main/ecobag/4/change/ HTTP/1.1" 200 10152
+[2021-09-17 19:19:29] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:34] INFO "POST /admin/main/ecobag/4/change/ HTTP/1.1" 302 0
+[2021-09-17 19:19:34] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7844
+[2021-09-17 19:19:35] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:35] INFO "GET /admin/main/ecobag/4/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:19:36] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:19:38] INFO "GET /admin/main/ecobag/3/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:19:38] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:40] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:19:41] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10150
+[2021-09-17 19:19:42] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:19:44] INFO "GET /admin/main/ecobag/3/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:19:45] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:47] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:19:49] INFO "GET /admin/main/ecobag/3/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:19:53] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:19:55] INFO "GET /admin/main/ecobag/4/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:19:55] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:19:58] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:20:01] INFO "GET /admin/main/ecobag/4/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:20:02] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:20:42] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:20:43] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:21:01] INFO [market] request market data
+[2021-09-17 19:21:01] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:21:10] INFO - Broken pipe from ('61.82.101.19', 50832)
+
+[2021-09-17 19:21:12] INFO "GET /admin/main/ecobag/3/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:21:12] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:21:22] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:21:23] INFO "GET /admin/main/ecobag/3/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:21:29] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:21:31] INFO "GET /admin/main/ecobag/4/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:21:31] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:21:33] INFO [market] request market data
+[2021-09-17 19:21:33] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:21:34] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:21:36] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10150
+[2021-09-17 19:21:37] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:21:38] INFO [market] request market data
+[2021-09-17 19:21:38] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:21:56] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:21:56] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:22:41] INFO [market] request market data
+[2021-09-17 19:22:41] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:23:02] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:23:02] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:23:48] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:23:50] INFO Watching for file changes with StatReloader
+[2021-09-17 19:23:53] INFO [market] request market data
+[2021-09-17 19:23:53] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:24:05] INFO [market] request market data
+[2021-09-17 19:24:05] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:24:09] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:24:10] INFO Watching for file changes with StatReloader
+[2021-09-17 19:24:16] INFO [market] request market data
+[2021-09-17 19:24:16] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:24:36] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:24:36] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:24:39] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:24:39] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:24:43] INFO "GET /admin/main/ecobag/3/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:24:44] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:24:47] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:24:48] INFO "GET /admin/main/ecobag/3/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:24:49] INFO [market] request market data
+[2021-09-17 19:24:49] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:24:49] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:24:51] INFO "GET /admin/main/ecobag/4/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:24:52] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:24:53] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:24:55] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10150
+[2021-09-17 19:24:55] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:24:58] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:25:02] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10150
+[2021-09-17 19:25:06] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:25:07] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10150
+[2021-09-17 19:25:56] WARNING Bad Request: /market_rent/
+[2021-09-17 19:25:56] WARNING "POST /market_rent/ HTTP/1.1" 400 11
+[2021-09-17 19:25:59] INFO "GET /admin/main/history/ HTTP/1.1" 200 7879
+[2021-09-17 19:26:00] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:26:03] INFO [market] request market data
+[2021-09-17 19:26:03] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:26:04] INFO "GET /admin/main/history/14/change/ HTTP/1.1" 200 9323
+[2021-09-17 19:26:05] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:26:06] INFO "GET /admin/main/history/ HTTP/1.1" 200 7879
+[2021-09-17 19:26:12] INFO [market] request market data
+[2021-09-17 19:26:12] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:26:18] INFO [market] request market data
+[2021-09-17 19:26:18] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:26:18] INFO "GET /admin/main/market/ HTTP/1.1" 200 10018
+[2021-09-17 19:26:18] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:26:20] INFO "GET /admin/main/market/3/change/ HTTP/1.1" 200 10758
+[2021-09-17 19:26:20] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:26:23] INFO "GET /admin/main/market/ HTTP/1.1" 200 10018
+[2021-09-17 19:26:24] INFO "GET /admin/main/history/ HTTP/1.1" 200 7879
+[2021-09-17 19:26:24] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:26:26] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:26:27] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:26:32] INFO [login] {'phone': '0101111111', 'password': 'qwer1234'}
+[2021-09-17 19:26:32] WARNING Bad Request: /login/
+[2021-09-17 19:26:32] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 19:26:38] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10150
+[2021-09-17 19:26:38] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:26:40] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:26:40] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:26:40] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:26:42] INFO "GET /admin/main/ecobag/3/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:26:42] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:26:59] INFO [market] request market data
+[2021-09-17 19:26:59] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:27:10] INFO [login] {'phone': '01011111111', 'password': 'wqer1234'}
+[2021-09-17 19:27:10] WARNING Bad Request: /login/
+[2021-09-17 19:27:10] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-17 19:27:21] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:27:21] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:27:42] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:27:43] INFO Watching for file changes with StatReloader
+[2021-09-17 19:28:01] INFO [market_rent] user "1007b4e1-d4f6-4b0d-bae2-7b8a2d450fc9" rent "8984889787721" at CU 역삼디오빌점
+[2021-09-17 19:28:01] INFO [market_rent] success rent
+[2021-09-17 19:28:01] INFO "POST /market_rent/ HTTP/1.1" 200 0
+[2021-09-17 19:28:05] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:28:07] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10153
+[2021-09-17 19:28:08] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:28:13] INFO "GET /admin/main/market/ HTTP/1.1" 200 10018
+[2021-09-17 19:28:13] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:28:15] INFO "GET /admin/main/market/3/change/ HTTP/1.1" 200 10758
+[2021-09-17 19:28:15] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:28:18] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:28:19] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:28:20] INFO "GET /admin/main/history/ HTTP/1.1" 200 8099
+[2021-09-17 19:28:21] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:28:22] INFO "GET /admin/main/history/15/change/ HTTP/1.1" 200 9305
+[2021-09-17 19:28:22] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:28:23] INFO [market] request market data
+[2021-09-17 19:28:23] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:31] INFO [market] request market data
+[2021-09-17 19:28:31] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:55] INFO [market] request market data
+[2021-09-17 19:28:55] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:55] INFO [market] request market data
+[2021-09-17 19:28:55] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:56] INFO [market] request market data
+[2021-09-17 19:28:56] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:56] INFO [market] request market data
+[2021-09-17 19:28:56] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:57] INFO [market] request market data
+[2021-09-17 19:28:57] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:57] INFO [market] request market data
+[2021-09-17 19:28:57] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:58] INFO [market] request market data
+[2021-09-17 19:28:58] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:58] INFO [market] request market data
+[2021-09-17 19:28:58] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:59] INFO [market] request market data
+[2021-09-17 19:28:59] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:28:59] INFO [market] request market data
+[2021-09-17 19:28:59] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:00] INFO [market] request market data
+[2021-09-17 19:29:00] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:00] INFO [market] request market data
+[2021-09-17 19:29:00] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:01] INFO [market] request market data
+[2021-09-17 19:29:01] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:01] INFO [market_rent] user "1007b4e1-d4f6-4b0d-bae2-7b8a2d450fc9" return "8984889787721" at CU 강남푸르지오점
+[2021-09-17 19:29:01] INFO [market_rent] sueccess return
+[2021-09-17 19:29:01] INFO "POST /market_rent/ HTTP/1.1" 200 0
+[2021-09-17 19:29:01] INFO [market] request market data
+[2021-09-17 19:29:01] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:02] INFO [market] request market data
+[2021-09-17 19:29:02] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:03] INFO [market] request market data
+[2021-09-17 19:29:03] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:03] INFO [market] request market data
+[2021-09-17 19:29:03] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:04] INFO [market] request market data
+[2021-09-17 19:29:04] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:04] INFO "GET /admin/main/history/15/change/ HTTP/1.1" 200 9323
+[2021-09-17 19:29:04] INFO [market] request market data
+[2021-09-17 19:29:04] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:05] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:29:05] INFO [market] request market data
+[2021-09-17 19:29:05] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:06] INFO [market] request market data
+[2021-09-17 19:29:06] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:07] INFO [market] request market data
+[2021-09-17 19:29:07] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:08] INFO [market] request market data
+[2021-09-17 19:29:08] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:08] INFO "GET /admin/main/user/ HTTP/1.1" 200 7828
+[2021-09-17 19:29:09] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:29:09] INFO [market] request market data
+[2021-09-17 19:29:09] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:09] INFO [market] request market data
+[2021-09-17 19:29:09] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:10] INFO [market] request market data
+[2021-09-17 19:29:10] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:11] INFO [market] request market data
+[2021-09-17 19:29:11] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:11] INFO [market] request market data
+[2021-09-17 19:29:11] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:12] INFO [market] request market data
+[2021-09-17 19:29:12] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:13] INFO "GET /admin/main/market/ HTTP/1.1" 200 10018
+[2021-09-17 19:29:13] INFO [market] request market data
+[2021-09-17 19:29:13] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:13] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:29:13] INFO [market] request market data
+[2021-09-17 19:29:13] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:14] INFO [market] request market data
+[2021-09-17 19:29:14] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:14] INFO [market] request market data
+[2021-09-17 19:29:14] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:15] INFO [market] request market data
+[2021-09-17 19:29:15] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:15] INFO "GET /admin/main/market/2/change/ HTTP/1.1" 200 10775
+[2021-09-17 19:29:15] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:29:15] INFO [market] request market data
+[2021-09-17 19:29:15] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:16] INFO [market] request market data
+[2021-09-17 19:29:16] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:17] INFO [market] request market data
+[2021-09-17 19:29:17] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:17] INFO [market] request market data
+[2021-09-17 19:29:17] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:18] INFO [market] request market data
+[2021-09-17 19:29:18] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:18] INFO "GET /admin/main/history/ HTTP/1.1" 200 8099
+[2021-09-17 19:29:18] INFO [market] request market data
+[2021-09-17 19:29:18] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:19] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:29:19] INFO [market] request market data
+[2021-09-17 19:29:19] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:19] INFO [market] request market data
+[2021-09-17 19:29:19] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:20] INFO [market] request market data
+[2021-09-17 19:29:20] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:20] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:29:20] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:29:20] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:29:20] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:29:20] INFO [market] request market data
+[2021-09-17 19:29:20] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:20] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:29:21] INFO [market] request market data
+[2021-09-17 19:29:21] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:21] INFO [market] request market data
+[2021-09-17 19:29:21] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:22] INFO [market] request market data
+[2021-09-17 19:29:22] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:22] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10170
+[2021-09-17 19:29:22] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:29:22] INFO [market] request market data
+[2021-09-17 19:29:22] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:23] INFO [market] request market data
+[2021-09-17 19:29:23] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:23] INFO [market] request market data
+[2021-09-17 19:29:23] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:24] INFO [market] request market data
+[2021-09-17 19:29:24] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:24] INFO [market] request market data
+[2021-09-17 19:29:24] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:25] INFO [market] request market data
+[2021-09-17 19:29:25] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:25] INFO [market] request market data
+[2021-09-17 19:29:25] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:26] INFO [market] request market data
+[2021-09-17 19:29:26] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:26] INFO [market] request market data
+[2021-09-17 19:29:26] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:27] INFO [market] request market data
+[2021-09-17 19:29:27] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:28] INFO [market] request market data
+[2021-09-17 19:29:28] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:28] INFO [market] request market data
+[2021-09-17 19:29:28] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:29] INFO [market] request market data
+[2021-09-17 19:29:29] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:29] INFO [market] request market data
+[2021-09-17 19:29:29] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:30] INFO [market] request market data
+[2021-09-17 19:29:30] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:30] INFO [market] request market data
+[2021-09-17 19:29:30] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:31] INFO [market] request market data
+[2021-09-17 19:29:31] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:36] INFO [market] request market data
+[2021-09-17 19:29:36] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:29:47] INFO [market_rent] user "b07917d6-8b52-4880-8906-a47e6839cc20" rent "8984889787721" at CU 강남푸르지오점
+[2021-09-17 19:29:47] INFO [market_rent] success rent
+[2021-09-17 19:29:47] INFO "POST /market_rent/ HTTP/1.1" 200 0
+[2021-09-17 19:29:48] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10156
+[2021-09-17 19:29:48] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:29:49] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:29:49] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:29:54] INFO "GET /admin/main/history/ HTTP/1.1" 200 8319
+[2021-09-17 19:29:54] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:29:56] INFO "GET /admin/main/history/16/change/ HTTP/1.1" 200 9308
+[2021-09-17 19:29:56] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:29:59] INFO "GET /admin/main/history/ HTTP/1.1" 200 8319
+[2021-09-17 19:30:19] ERROR Internal Server Error: /market_rent/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 225, in market_rent
+    ecobag = Ecobag.objects.get(eid=search_Eid)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+main.models.Ecobag.DoesNotExist: Ecobag matching query does not exist.
+[2021-09-17 19:30:19] ERROR "POST /market_rent/ HTTP/1.1" 500 104815
+[2021-09-17 19:30:45] INFO [market] request market data
+[2021-09-17 19:30:45] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:30:46] INFO [market_rent] user "b07917d6-8b52-4880-8906-a47e6839cc20" return "8984889787721" at CU 강남푸르지오점
+[2021-09-17 19:30:46] INFO [market_rent] sueccess return
+[2021-09-17 19:30:46] INFO "POST /market_rent/ HTTP/1.1" 200 0
+[2021-09-17 19:30:49] INFO "GET /admin/main/history/16/change/ HTTP/1.1" 200 9326
+[2021-09-17 19:30:49] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:30:51] INFO "GET /admin/main/history/ HTTP/1.1" 200 8319
+[2021-09-17 19:30:52] INFO "GET /admin/main/market/ HTTP/1.1" 200 10018
+[2021-09-17 19:30:52] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:30:54] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:30:55] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:30:56] INFO "GET /admin/main/ecobag/4/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:30:56] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:30:57] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:31:20] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:31:22] INFO Watching for file changes with StatReloader
+[2021-09-17 19:31:29] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:31:30] INFO Watching for file changes with StatReloader
+[2021-09-17 19:31:41] INFO "GET /admin/main/ecobag/4/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:31:42] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:31:42] INFO [market] request market data
+[2021-09-17 19:31:42] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:31:43] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:31:44] INFO "GET /admin/main/market/ HTTP/1.1" 200 10018
+[2021-09-17 19:31:45] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:31:47] INFO "GET /admin/main/market/3/change/ HTTP/1.1" 200 10758
+[2021-09-17 19:31:48] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:31:50] INFO "GET /admin/main/market/ HTTP/1.1" 200 10018
+[2021-09-17 19:31:52] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:31:53] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:31:55] INFO "GET /admin/main/ecobag/4/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:31:55] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:31:57] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:31:59] INFO "GET /admin/main/ecobag/3/change/ HTTP/1.1" 200 10151
+[2021-09-17 19:31:59] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:32:01] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:32:02] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10173
+[2021-09-17 19:32:03] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:32:15] INFO "GET /admin/main/user/ HTTP/1.1" 200 7828
+[2021-09-17 19:32:15] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:32:16] INFO "GET /admin/main/market/ HTTP/1.1" 200 10018
+[2021-09-17 19:32:16] INFO "GET /admin/main/market/ HTTP/1.1" 200 10018
+[2021-09-17 19:32:17] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:32:19] INFO "GET /admin/main/market/2/change/ HTTP/1.1" 200 10775
+[2021-09-17 19:32:19] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:32:21] INFO "GET /admin/main/card/ HTTP/1.1" 200 6035
+[2021-09-17 19:32:21] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:32:22] INFO [market] request market data
+[2021-09-17 19:32:22] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:32:22] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:32:22] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7635
+[2021-09-17 19:32:23] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:32:25] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10173
+[2021-09-17 19:32:25] INFO [history] <QueryDict: {'phone': ['01012345678']}>
+[2021-09-17 19:32:25] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:32:25] ERROR Internal Server Error: /history/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 197, in history
+    user = User.objects.get(phone = search_phone)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+main.models.User.DoesNotExist: User matching query does not exist.
+[2021-09-17 19:32:25] ERROR "GET /history/?phone=01012345678 HTTP/1.1" 500 104709
+[2021-09-17 19:32:46] INFO [market_rent] user "b080b507-776e-46fd-bbc6-b4d6c81644c6" rent "8984889787721" at CU 강남푸르지오점
+[2021-09-17 19:32:46] INFO [market_rent] success rent
+[2021-09-17 19:32:46] INFO "POST /market_rent/ HTTP/1.1" 200 0
+[2021-09-17 19:32:53] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10191
+[2021-09-17 19:32:54] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:33:20] INFO [market_rent] user "b080b507-776e-46fd-bbc6-b4d6c81644c6" return "8984889787721" at CU 역삼디오빌점
+[2021-09-17 19:33:20] INFO [market_rent] sueccess return
+[2021-09-17 19:33:20] INFO "POST /market_rent/ HTTP/1.1" 200 0
+[2021-09-17 19:33:22] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10175
+[2021-09-17 19:33:23] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:33:26] INFO "GET /admin/main/history/ HTTP/1.1" 200 8539
+[2021-09-17 19:33:26] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:33:29] INFO "GET /admin/main/history/16/change/ HTTP/1.1" 200 9326
+[2021-09-17 19:33:29] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:33:31] INFO "GET /admin/main/history/ HTTP/1.1" 200 8539
+[2021-09-17 19:33:33] INFO "GET /admin/main/history/15/change/ HTTP/1.1" 200 9323
+[2021-09-17 19:33:33] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:33:44] INFO [market] request market data
+[2021-09-17 19:33:44] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:34:05] INFO "GET /admin/main/history/ HTTP/1.1" 200 8539
+[2021-09-17 19:34:08] INFO "GET /admin/main/history/ HTTP/1.1" 200 8539
+[2021-09-17 19:34:08] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:34:12] INFO "GET /admin/main/history/15/change/ HTTP/1.1" 200 9323
+[2021-09-17 19:34:12] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:34:14] INFO "GET /admin/main/history/ HTTP/1.1" 200 8539
+[2021-09-17 19:34:16] INFO [market] request market data
+[2021-09-17 19:34:16] INFO "GET /market/ HTTP/1.1" 200 4596
+[2021-09-17 19:34:17] INFO "GET /admin/main/user/ HTTP/1.1" 200 7828
+[2021-09-17 19:34:18] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:34:20] INFO "GET /admin/main/user/19/change/ HTTP/1.1" 200 11606
+[2021-09-17 19:34:20] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 19:34:23] INFO "GET /admin/main/user/ HTTP/1.1" 200 7828
+[2021-09-17 19:34:37] INFO [login] {'phone': '01011111111', 'password': 'qwer1234'}
+[2021-09-17 19:34:37] INFO "POST /login/ HTTP/1.1" 200 133
+[2021-09-17 19:39:08] INFO "GET /barcode_user/0101111111118.png HTTP/1.1" 200 824
+[2021-09-17 19:42:04] INFO "GET /barcode_user/0101111111118.png HTTP/1.1" 200 824
+[2021-09-17 19:46:14] WARNING Method Not Allowed: /history/
+[2021-09-17 19:46:14] WARNING "POST /history/?phone=01046156192 HTTP/1.1" 405 41
+[2021-09-17 19:46:16] INFO [history] <QueryDict: {'phone': ['01046156192']}>
+[2021-09-17 19:46:16] INFO "GET /history/?phone=01046156192 HTTP/1.1" 200 821
+[2021-09-17 19:48:21] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:48:23] INFO Watching for file changes with StatReloader
+[2021-09-17 19:48:34] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 19:48:36] INFO Watching for file changes with StatReloader
+[2021-09-17 19:49:02] INFO /home/m0nd2y/paybag-server/paybag_api/paybag_api/settings.py changed, reloading.
+[2021-09-18 04:50:48] INFO Watching for file changes with StatReloader
+[2021-09-18 04:51:20] INFO "GET /admin/main/user/ HTTP/1.1" 200 7832
+[2021-09-18 04:51:20] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:51:22] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7639
+[2021-09-18 04:51:23] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:51:25] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10179
+[2021-09-18 04:51:25] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:51:26] INFO [market] request market data
+[2021-09-18 04:51:26] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 04:52:16] INFO [market_rent] user "b07917d6-8b52-4880-8906-a47e6839cc20" rent "8984889787721" at CU 역삼디오빌점
+[2021-09-18 04:52:16] INFO [market_rent] success rent
+[2021-09-18 04:52:16] INFO "POST /market_rent/ HTTP/1.1" 200 0
+[2021-09-18 04:52:45] INFO "GET /admin/main/history/ HTTP/1.1" 200 8763
+[2021-09-18 04:52:45] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:52:47] INFO "GET /admin/main/history/18/change/ HTTP/1.1" 200 9309
+[2021-09-18 04:52:47] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:52:53] INFO "GET /admin/main/history/ HTTP/1.1" 200 8763
+[2021-09-18 04:53:31] INFO "GET /admin/main/history/18/change/ HTTP/1.1" 200 9309
+[2021-09-18 04:53:32] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:53:38] INFO "GET /admin/main/user/ HTTP/1.1" 200 7832
+[2021-09-18 04:53:38] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:53:40] INFO "GET /admin/main/user/13/change/ HTTP/1.1" 200 11645
+[2021-09-18 04:53:40] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:53:41] INFO "GET /admin/main/user/ HTTP/1.1" 200 7832
+[2021-09-18 04:53:42] INFO "GET /admin/main/user/11/change/ HTTP/1.1" 200 11645
+[2021-09-18 04:53:42] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:53:44] INFO "GET /admin/main/user/ HTTP/1.1" 200 7832
+[2021-09-18 04:54:26] INFO [market_rent] user "b07917d6-8b52-4880-8906-a47e6839cc20" return "8984889787721" at GS25 역삼효성점
+[2021-09-18 04:54:26] INFO [market_rent] sueccess return
+[2021-09-18 04:54:26] INFO "POST /market_rent/ HTTP/1.1" 200 0
+[2021-09-18 04:54:34] INFO "GET /admin/main/user/19/change/ HTTP/1.1" 200 11610
+[2021-09-18 04:54:34] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:54:36] INFO "GET /admin/main/ecobag/ HTTP/1.1" 200 7639
+[2021-09-18 04:54:36] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:54:38] INFO "GET /admin/main/ecobag/5/change/ HTTP/1.1" 200 10175
+[2021-09-18 04:54:38] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:54:40] INFO "GET /admin/main/card/ HTTP/1.1" 200 6039
+[2021-09-18 04:54:41] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:54:43] INFO "GET /admin/main/history/ HTTP/1.1" 200 8763
+[2021-09-18 04:54:43] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:54:45] INFO "GET /admin/main/history/18/change/ HTTP/1.1" 200 9323
+[2021-09-18 04:54:45] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:54:54] INFO [history] <QueryDict: {'phone': ['01046156192']}>
+[2021-09-18 04:54:54] INFO "GET /history/?phone=01046156192 HTTP/1.1" 200 815
+[2021-09-18 04:55:07] INFO [history] <QueryDict: {'phone': ['01052376809']}>
+[2021-09-18 04:55:07] INFO "GET /history/?phone=01052376809 HTTP/1.1" 200 1116
+[2021-09-18 04:55:25] INFO "GET /admin/main/user/ HTTP/1.1" 200 7832
+[2021-09-18 04:55:26] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:55:29] INFO "POST /admin/main/user/ HTTP/1.1" 200 6148
+[2021-09-18 04:55:31] INFO "POST /admin/main/user/ HTTP/1.1" 302 0
+[2021-09-18 04:55:32] INFO "GET /admin/main/user/ HTTP/1.1" 200 7752
+[2021-09-18 04:55:32] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-18 04:55:50] INFO /home/m0nd2y/paybag-server/paybag_api/paybag_api/urls.py changed, reloading.
+[2021-09-18 04:55:51] INFO Watching for file changes with StatReloader
