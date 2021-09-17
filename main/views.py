@@ -199,8 +199,10 @@ def history(request) :
     ---
     '''
     if request.method == 'GET':
-        logging.info("[history] request history data")
-        obj = History.objects.all()
+        search_phone = request.GET['phone']
+        logging.info("[history] " + str(request.GET))
+        user = User.objects.get(phone = search_phone)
+        obj = History.objects.filter(uid=user.uid)
         serializer = HistorySerializer(obj, many=True)
         return JsonResponse(serializer.data, safe=False)
     else :
@@ -232,7 +234,7 @@ def market_rent(requests) :
         market = Market.objects.get(mid=search_Mid)
         user = User.objects.get(phone=search_phone)
         try :
-            history = History.objects.get(uid = user.uid, eid=search_Eid, returnMarket="0")
+            history = History.objects.get(uid = user.uid, eid=search_Eid, returnMarket="미정")
             history.returnMarket = market.marketName
             market.stock = market.stock + 1
             user.count = user.count - 1
@@ -247,7 +249,7 @@ def market_rent(requests) :
         except :
             ecobag.status = "Renting"
             ecobag.lastMarket = market.marketName
-            history = History(uid=user.uid, eid=search_Eid, rentMarket=market.marketName, returnMarket="0", updatedAt=datetime.datetime.now())
+            history = History(uid=user.uid, eid=search_Eid, rentMarket=market.marketName, returnMarket="미정", updatedAt=datetime.datetime.now())
             market.count = market.count + 1
             market.stock = market.stock - 1
             user.count = user.count + 1

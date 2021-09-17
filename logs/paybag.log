@@ -237,3 +237,251 @@ TypeError: eval() arg 1 must be a string, bytes or code object
 [2021-09-17 17:05:42] INFO Watching for file changes with StatReloader
 [2021-09-17 17:06:02] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
 [2021-09-17 17:06:05] INFO Watching for file changes with StatReloader
+[2021-09-17 17:06:59] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:07:01] INFO Watching for file changes with StatReloader
+[2021-09-17 17:07:48] INFO [market] request market data
+[2021-09-17 17:07:48] INFO "GET /market/ HTTP/1.1" 200 1071
+[2021-09-17 17:08:27] INFO [history] request history data
+[2021-09-17 17:08:27] INFO "GET /history/ HTTP/1.1" 200 1760
+[2021-09-17 17:08:59] INFO [history] request history data
+[2021-09-17 17:08:59] INFO "GET /history/ HTTP/1.1" 200 1760
+[2021-09-17 17:09:17] INFO [history] request history data
+[2021-09-17 17:09:17] INFO "GET /history/ HTTP/1.1" 200 1760
+[2021-09-17 17:09:54] INFO [history] request history data
+[2021-09-17 17:09:54] INFO "GET /history/ HTTP/1.1" 200 1760
+[2021-09-17 17:10:25] INFO [history] request history data
+[2021-09-17 17:10:25] INFO "GET /history/ HTTP/1.1" 200 1760
+[2021-09-17 17:11:51] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:11:54] INFO Watching for file changes with StatReloader
+[2021-09-17 17:11:57] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:12:00] INFO Watching for file changes with StatReloader
+[2021-09-17 17:12:09] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:12:12] INFO Watching for file changes with StatReloader
+[2021-09-17 17:12:49] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:12:51] INFO Watching for file changes with StatReloader
+[2021-09-17 17:12:54] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:12:57] INFO Watching for file changes with StatReloader
+[2021-09-17 17:13:07] INFO "GET /admin/main/user/ HTTP/1.1" 200 8449
+[2021-09-17 17:13:08] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:13:09] INFO "GET /admin/main/history/ HTTP/1.1" 200 8521
+[2021-09-17 17:13:10] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:13:11] INFO "GET /admin/main/history/8/change/ HTTP/1.1" 200 9293
+[2021-09-17 17:13:11] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:13:17] INFO "GET /admin/main/user/ HTTP/1.1" 200 8449
+[2021-09-17 17:13:17] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:13:19] INFO "GET /admin/main/user/2/change/ HTTP/1.1" 200 11522
+[2021-09-17 17:13:20] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:13:39] INFO "GET /history HTTP/1.1" 301 0
+[2021-09-17 17:13:40] ERROR Internal Server Error: /history/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 202, in history
+    data = JSONParser().parse(requests)
+NameError: name 'requests' is not defined
+[2021-09-17 17:13:40] ERROR "GET /history/ HTTP/1.1" 500 94467
+[2021-09-17 17:14:01] INFO "GET /history HTTP/1.1" 301 0
+[2021-09-17 17:14:02] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:14:05] INFO Watching for file changes with StatReloader
+[2021-09-17 17:14:08] INFO "GET /history HTTP/1.1" 301 0
+[2021-09-17 17:14:08] WARNING Bad Request: /history/
+[2021-09-17 17:14:08] WARNING "GET /history/ HTTP/1.1" 400 73
+[2021-09-17 17:14:17] INFO "GET /history HTTP/1.1" 301 0
+[2021-09-17 17:14:18] WARNING Bad Request: /history/
+[2021-09-17 17:14:18] WARNING "GET /history/ HTTP/1.1" 400 73
+[2021-09-17 17:15:02] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:15:05] INFO Watching for file changes with StatReloader
+[2021-09-17 17:15:08] INFO "GET /history HTTP/1.1" 301 0
+[2021-09-17 17:15:09] WARNING Bad Request: /history/
+[2021-09-17 17:15:09] WARNING "GET /history/ HTTP/1.1" 400 73
+[2021-09-17 17:15:14] WARNING Bad Request: /history/
+[2021-09-17 17:15:14] WARNING "GET /history/ HTTP/1.1" 400 73
+[2021-09-17 17:15:19] INFO - Broken pipe from ('61.82.101.19', 50576)
+
+[2021-09-17 17:15:25] INFO "GET /history HTTP/1.1" 301 0
+[2021-09-17 17:15:26] WARNING Bad Request: /history/
+[2021-09-17 17:15:26] WARNING "GET /history/ HTTP/1.1" 400 73
+[2021-09-17 17:15:51] INFO "GET /history?phone=01092920303 HTTP/1.1" 301 0
+[2021-09-17 17:15:51] WARNING Bad Request: /history/
+[2021-09-17 17:15:51] WARNING "GET /history/?phone=01092920303 HTTP/1.1" 400 73
+[2021-09-17 17:15:58] INFO "GET /history HTTP/1.1" 301 0
+[2021-09-17 17:15:59] WARNING Bad Request: /history/
+[2021-09-17 17:15:59] WARNING "GET /history/ HTTP/1.1" 400 73
+[2021-09-17 17:16:00] INFO "GET /history HTTP/1.1" 301 0
+[2021-09-17 17:16:00] WARNING Bad Request: /history/
+[2021-09-17 17:16:00] WARNING "GET /history/ HTTP/1.1" 400 73
+[2021-09-17 17:16:04] INFO "GET /admin/main/user/ HTTP/1.1" 200 8449
+[2021-09-17 17:16:51] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:16:53] INFO Watching for file changes with StatReloader
+[2021-09-17 17:16:57] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:16:59] INFO Watching for file changes with StatReloader
+[2021-09-17 17:17:04] INFO "GET /history?phone=1234 HTTP/1.1" 301 0
+[2021-09-17 17:17:05] INFO [history] <QueryDict: {'phone': ['1234']}>
+[2021-09-17 17:17:05] ERROR Internal Server Error: /history/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 204, in history
+    user = User.objects.get(phone = search_phone)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+main.models.User.DoesNotExist: User matching query does not exist.
+[2021-09-17 17:17:05] ERROR "GET /history/?phone=1234 HTTP/1.1" 500 104209
+[2021-09-17 17:17:13] INFO "GET /history?phone=01092920303 HTTP/1.1" 301 0
+[2021-09-17 17:17:13] INFO [history] <QueryDict: {'phone': ['01092920303']}>
+[2021-09-17 17:17:13] ERROR Internal Server Error: /history/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 204, in history
+    user = User.objects.get(phone = search_phone)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.MultipleObjectsReturned(
+main.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 2!
+[2021-09-17 17:17:13] ERROR "GET /history/?phone=01092920303 HTTP/1.1" 500 104485
+[2021-09-17 17:17:33] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:17:35] INFO Watching for file changes with StatReloader
+[2021-09-17 17:17:38] INFO "GET /history?phone=01092920303 HTTP/1.1" 301 0
+[2021-09-17 17:17:38] INFO [history] <QueryDict: {'phone': ['01092920303']}>
+[2021-09-17 17:17:38] ERROR Internal Server Error: /history/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 205, in history
+    user = User.objects.get(phone = search_phone)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/query.py", line 439, in get
+    raise self.model.MultipleObjectsReturned(
+main.models.User.MultipleObjectsReturned: get() returned more than one User -- it returned 2!
+[2021-09-17 17:17:38] ERROR "GET /history/?phone=01092920303 HTTP/1.1" 500 104468
+[2021-09-17 17:17:56] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:17:58] INFO Watching for file changes with StatReloader
+[2021-09-17 17:18:02] INFO "GET /admin/main/user/ HTTP/1.1" 200 8449
+[2021-09-17 17:18:02] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:18:07] INFO "GET /history?phone=01046156192 HTTP/1.1" 301 0
+[2021-09-17 17:18:08] INFO [history] <QueryDict: {'phone': ['01046156192']}>
+[2021-09-17 17:18:08] ERROR Internal Server Error: /history/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 204, in history
+    user = User.objects.get(phone = search_phone)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+main.models.User.DoesNotExist: User matching query does not exist.
+[2021-09-17 17:18:08] ERROR "GET /history/?phone=01046156192 HTTP/1.1" 500 104335
+[2021-09-17 17:18:14] INFO "GET /admin/main/user/2/change/ HTTP/1.1" 200 11522
+[2021-09-17 17:18:14] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:18:16] INFO "GET /admin/main/user/ HTTP/1.1" 200 8449
+[2021-09-17 17:18:17] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:18:17] INFO "GET /admin/main/history/8/change/ HTTP/1.1" 200 9293
+[2021-09-17 17:18:17] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:18:18] INFO "GET /admin/main/history/ HTTP/1.1" 200 8521
+[2021-09-17 17:18:19] INFO "GET /admin/main/history/8/change/ HTTP/1.1" 200 9293
+[2021-09-17 17:18:20] INFO "GET /admin/main/history/ HTTP/1.1" 200 8521
+[2021-09-17 17:18:23] INFO "GET /admin/main/user/ HTTP/1.1" 200 8449
+[2021-09-17 17:18:24] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:18:25] INFO "GET /admin/main/user/1/change/ HTTP/1.1" 200 11558
+[2021-09-17 17:18:25] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[2021-09-17 17:18:30] INFO "GET /history?phone=01012345678 HTTP/1.1" 301 0
+[2021-09-17 17:18:31] INFO [history] <QueryDict: {'phone': ['01012345678']}>
+[2021-09-17 17:18:31] INFO "GET /history/?phone=01012345678 HTTP/1.1" 200 746
+[2021-09-17 17:18:53] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-17 17:18:55] INFO Watching for file changes with StatReloader
