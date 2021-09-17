@@ -1835,3 +1835,252 @@ main.models.User.DoesNotExist: User matching query does not exist.
 [2021-09-18 04:55:32] INFO "GET /admin/jsi18n/ HTTP/1.1" 200 3195
 [2021-09-18 04:55:50] INFO /home/m0nd2y/paybag-server/paybag_api/paybag_api/urls.py changed, reloading.
 [2021-09-18 04:55:51] INFO Watching for file changes with StatReloader
+[2021-09-18 04:57:40] INFO [market] request market data
+[2021-09-18 04:57:40] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 04:58:43] INFO [market] request market data
+[2021-09-18 04:58:44] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 04:59:01] INFO [login] {'phone': '01052376809', 'password': 'qwer1234'}
+[2021-09-18 04:59:01] INFO "POST /login/ HTTP/1.1" 200 132
+[2021-09-18 04:59:09] INFO "GET /history?phone=01012345678 HTTP/1.1" 301 0
+[2021-09-18 04:59:09] INFO [history] <QueryDict: {'phone': ['01012345678']}>
+[2021-09-18 04:59:09] ERROR Internal Server Error: /history/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 196, in history
+    user = User.objects.get(phone = search_phone)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+main.models.User.DoesNotExist: User matching query does not exist.
+[2021-09-18 04:59:09] ERROR "GET /history/?phone=01012345678 HTTP/1.1" 500 104696
+[2021-09-18 04:59:30] INFO "GET /barcode_user/0105237680930.png HTTP/1.1" 200 825
+[2021-09-18 04:59:38] INFO - Broken pipe from ('61.82.101.19', 50875)
+
+[2021-09-18 04:59:38] INFO - Broken pipe from ('61.82.101.19', 50888)
+
+[2021-09-18 04:59:40] INFO [market] request market data
+[2021-09-18 04:59:40] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 04:59:45] INFO - Broken pipe from ('61.82.101.19', 50892)
+
+[2021-09-18 05:02:18] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-18 05:02:19] INFO Watching for file changes with StatReloader
+[2021-09-18 05:02:25] INFO /home/m0nd2y/paybag-server/paybag_api/main/views.py changed, reloading.
+[2021-09-18 05:02:27] INFO Watching for file changes with StatReloader
+[2021-09-18 05:02:46] INFO [login] {'phone': '01012345678', 'password': 'qwer1234'}
+[2021-09-18 05:02:46] WARNING Bad Request: /login/
+[2021-09-18 05:02:46] WARNING "POST /login/ HTTP/1.1" 400 0
+[2021-09-18 05:03:03] INFO [login] {'phone': '01052376809', 'password': 'qwer1234'}
+[2021-09-18 05:03:03] INFO "POST /login/ HTTP/1.1" 200 156
+[2021-09-18 05:03:06] INFO [login] {'phone': '01046156192', 'password': 'qwer1234'}
+[2021-09-18 05:03:06] INFO "POST /login/ HTTP/1.1" 200 156
+[2021-09-18 05:03:08] INFO [history] <QueryDict: {'phone': ['01012345678']}>
+[2021-09-18 05:03:08] ERROR Internal Server Error: /history/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 197, in history
+    user = User.objects.get(phone = search_phone)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+main.models.User.DoesNotExist: User matching query does not exist.
+[2021-09-18 05:03:08] ERROR "GET /history/?phone=01012345678 HTTP/1.1" 500 104696
+[2021-09-18 05:03:31] INFO [login] {'phone': '01052376809', 'password': 'qwer1234'}
+[2021-09-18 05:03:31] INFO "POST /login/ HTTP/1.1" 200 156
+[2021-09-18 05:03:35] INFO [history] <QueryDict: {'phone': ['01052376809']}>
+[2021-09-18 05:03:35] INFO "GET /history/?phone=01052376809 HTTP/1.1" 200 1116
+[2021-09-18 05:03:48] INFO [history] <QueryDict: {'phone': ['01052376809']}>
+[2021-09-18 05:03:48] INFO "GET /history/?phone=01052376809 HTTP/1.1" 200 1116
+[2021-09-18 05:03:57] INFO [history] <QueryDict: {'phone': ['01012345678']}>
+[2021-09-18 05:03:57] ERROR Internal Server Error: /history/
+Traceback (most recent call last):
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/m0nd2y/paybag-server/paybag_api/main/views.py", line 197, in history
+    user = User.objects.get(phone = search_phone)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/m0nd2y/.local/lib/python3.8/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+main.models.User.DoesNotExist: User matching query does not exist.
+[2021-09-18 05:03:57] ERROR "GET /history/?phone=01012345678 HTTP/1.1" 500 104696
+[2021-09-18 05:04:00] INFO - Broken pipe from ('61.82.101.19', 50906)
+
+[2021-09-18 05:08:02] INFO [market] request market data
+[2021-09-18 05:08:02] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:08:19] INFO - Broken pipe from ('61.82.101.19', 57377)
+
+[2021-09-18 05:08:28] INFO [market] request market data
+[2021-09-18 05:08:28] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:08:42] INFO - Broken pipe from ('61.82.101.19', 57390)
+
+[2021-09-18 05:08:49] INFO [market] request market data
+[2021-09-18 05:08:49] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:08:58] INFO [market] request market data
+[2021-09-18 05:08:58] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:08:58] INFO [market] request market data
+[2021-09-18 05:08:58] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:09:06] INFO - Broken pipe from ('61.82.101.19', 57403)
+
+[2021-09-18 05:09:09] INFO [market] request market data
+[2021-09-18 05:09:09] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:09:26] INFO [login] {'phone': '01046156192', 'password': 'qwer1234'}
+[2021-09-18 05:09:26] INFO "POST /login/ HTTP/1.1" 200 156
+[2021-09-18 05:09:28] INFO "GET /barcode_user/0104615619210.png HTTP/1.1" 200 827
+[2021-09-18 05:09:32] INFO "GET /history?phone=01046156192 HTTP/1.1" 301 0
+[2021-09-18 05:09:32] INFO [history] <QueryDict: {'phone': ['01046156192']}>
+[2021-09-18 05:09:32] INFO "GET /history/?phone=01046156192 HTTP/1.1" 200 815
+[2021-09-18 05:09:35] INFO [history] <QueryDict: {'phone': ['01046156192']}>
+[2021-09-18 05:09:35] INFO "GET /history/?phone=01046156192 HTTP/1.1" 200 815
+[2021-09-18 05:10:01] INFO [history] <QueryDict: {'phone': ['01046156192']}>
+[2021-09-18 05:10:01] INFO "GET /history/?phone=01046156192 HTTP/1.1" 200 815
+[2021-09-18 05:10:14] INFO [history] <QueryDict: {'phone': ['01046156192']}>
+[2021-09-18 05:10:14] INFO "GET /history/?phone=01046156192 HTTP/1.1" 200 815
+[2021-09-18 05:10:54] INFO [market] request market data
+[2021-09-18 05:10:54] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:11:03] INFO [login] {'phone': '01046156192', 'password': 'qwer1234'}
+[2021-09-18 05:11:03] INFO "POST /login/ HTTP/1.1" 200 156
+[2021-09-18 05:11:08] INFO [history] <QueryDict: {'phone': ['01046156192']}>
+[2021-09-18 05:11:08] INFO "GET /history/?phone=01046156192 HTTP/1.1" 200 815
+[2021-09-18 05:11:11] INFO - Broken pipe from ('61.82.101.19', 57420)
+
+[2021-09-18 05:11:39] INFO [market] request market data
+[2021-09-18 05:11:39] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:11:59] INFO - Broken pipe from ('61.82.101.19', 57429)
+
+[2021-09-18 05:12:03] INFO [market] request market data
+[2021-09-18 05:12:03] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:13:08] INFO [market] request market data
+[2021-09-18 05:13:08] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:14:19] INFO [market] request market data
+[2021-09-18 05:14:19] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:14:38] INFO [market] request market data
+[2021-09-18 05:14:39] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:15:23] INFO [market] request market data
+[2021-09-18 05:15:23] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:16:24] INFO [market] request market data
+[2021-09-18 05:16:24] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:16:34] INFO [market] request market data
+[2021-09-18 05:16:34] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:16:59] INFO [market] request market data
+[2021-09-18 05:16:59] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:17:13] INFO [market] request market data
+[2021-09-18 05:17:13] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:17:42] INFO [market] request market data
+[2021-09-18 05:17:42] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:17:50] INFO [market] request market data
+[2021-09-18 05:17:50] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:17:56] INFO [market] request market data
+[2021-09-18 05:17:56] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:18:01] INFO [market] request market data
+[2021-09-18 05:18:02] INFO [market] request market data
+[2021-09-18 05:18:02] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:18:02] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:18:05] INFO [login] {'phone': '01046156192', 'password': 'qwer1234'}
+[2021-09-18 05:18:05] INFO "POST /login/ HTTP/1.1" 200 156
+[2021-09-18 05:18:07] INFO [market] request market data
+[2021-09-18 05:18:07] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:18:07] INFO [market] request market data
+[2021-09-18 05:18:07] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:18:12] INFO [history] <QueryDict: {'phone': ['01046156192']}>
+[2021-09-18 05:18:12] INFO "GET /history/?phone=01046156192 HTTP/1.1" 200 815
+[2021-09-18 05:18:15] INFO - Broken pipe from ('61.82.101.19', 57462)
+
+[2021-09-18 05:18:34] INFO [market] request market data
+[2021-09-18 05:18:34] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:18:44] INFO [market] request market data
+[2021-09-18 05:18:44] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:18:46] INFO [market] request market data
+[2021-09-18 05:18:46] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:18:47] INFO [market] request market data
+[2021-09-18 05:18:47] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:18:52] INFO [market] request market data
+[2021-09-18 05:18:52] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:20:01] INFO [market] request market data
+[2021-09-18 05:20:01] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:52:05] INFO [market] request market data
+[2021-09-18 05:52:05] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:55:55] INFO [market] request market data
+[2021-09-18 05:55:55] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:56:35] INFO [market] request market data
+[2021-09-18 05:56:35] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:57:03] INFO [market] request market data
+[2021-09-18 05:57:03] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:57:47] INFO [market] request market data
+[2021-09-18 05:57:47] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:58:28] INFO [market] request market data
+[2021-09-18 05:58:29] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:58:34] INFO [market] request market data
+[2021-09-18 05:58:34] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 05:58:34] WARNING Not Found: /images/icons/gear.png
+[2021-09-18 05:58:34] WARNING "GET /images/icons/gear.png HTTP/1.1" 404 3640
+[2021-09-18 06:00:25] WARNING Not Found: /images/icons/gear.png
+[2021-09-18 06:00:25] WARNING "GET /images/icons/gear.png HTTP/1.1" 404 3640
+[2021-09-18 06:01:14] INFO [market] request market data
+[2021-09-18 06:01:14] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 06:52:06] INFO Watching for file changes with StatReloader
+[2021-09-18 06:52:08] INFO [login] {'phone': '01046156192', 'password': 'qwer1234'}
+[2021-09-18 06:52:08] INFO "POST /login/ HTTP/1.1" 200 156
+[2021-09-18 06:52:11] INFO [market] request market data
+[2021-09-18 06:52:11] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-18 06:52:16] INFO - Broken pipe from ('61.82.101.19', 57589)
+
+[2021-09-18 06:52:33] INFO [market] request market data
+[2021-09-18 06:52:33] INFO "GET /market/ HTTP/1.1" 200 4568

@@ -85,7 +85,8 @@ def login(request):
                     dummy_data = {
                         'name' : obj.name,
                         'barcode' : "http://pwnable.co.kr:8000/barcode_user/"+str(obj.barcode_id)+".png",
-                        'barcode_id' : str(obj.barcode_id)
+                        'barcode_id' : str(obj.barcode_id),
+                        'phone' : str(obj.phone)
                     }
                     return JsonResponse(dummy_data, status=200)
                 else :
