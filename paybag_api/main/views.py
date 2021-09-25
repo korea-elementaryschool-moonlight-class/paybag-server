@@ -601,6 +601,7 @@ def market_rent(request) :
             history.returnMarket = market.marketName
             history.updatedAt = timezone.now()
             market.stock = market.stock + 1
+            market.rentMarket = market.rentMarket + 1
             user.count = user.count - 1
             user.updatedAt = timezone.now()
             user.save()
@@ -621,6 +622,7 @@ def market_rent(request) :
             history = History(uid=user.uid, eid=search_Eid, rentMarket=market.marketName, returnMarket="미정", updatedAt=timezone.now())
             if(market.stock > 0) :
                 market.count = market.count + 1
+                market.lentcount = market.lentcount + 1
                 market.stock = market.stock - 1
                 user.count = user.count + 1
                 user.stamp = user.stamp + 1
@@ -636,7 +638,6 @@ def market_rent(request) :
                 return HttpResponse("no stock :(",status=400)
     else :
         return HttpResponse(status=400)
-
 
 @api_view(['POST'])
 @csrf_exempt

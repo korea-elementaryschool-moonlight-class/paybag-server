@@ -1,0 +1,51 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 25, 2021 - 17:36:54
+Django version 3.2.6, using settings 'paybag_api.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+INFO "GET /admin/ HTTP/1.1" 302 0 [django.server:161]
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218 [django.server:161]
+INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0 [django.server:161]
+INFO "GET /admin/ HTTP/1.1" 200 8359 [django.server:161]
+WARNING Not Found: / [django.request:224]
+WARNING "GET / HTTP/1.1" 404 3559 [django.server:161]
+WARNING Not Found: / [django.request:224]
+WARNING "GET / HTTP/1.1" 404 3559 [django.server:161]
+WARNING Not Found: / [django.request:224]
+WARNING "GET / HTTP/1.1" 404 3559 [django.server:161]
+WARNING Not Found: / [django.request:224]
+WARNING "GET / HTTP/1.1" 404 3559 [django.server:161]
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 25, 2021 - 17:38:09
+Django version 3.2.6, using settings 'paybag_api.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+Error: That port is already in use.
+INFO "GET /admin/ HTTP/1.1" 200 8359 [django.server:161]
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 25, 2021 - 17:39:21
+Django version 3.2.6, using settings 'paybag_api.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.
+INFO "GET /admin/ HTTP/1.1" 200 8359 [django.server:161]
+INFO "GET /admin/ HTTP/1.1" 302 0 [django.server:161]
+INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218 [django.server:161]
+INFO "GET /static/admin/css/base.css HTTP/1.1" 200 19513 [django.server:161]
+INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271 [django.server:161]
+INFO "GET /static/admin/css/login.css HTTP/1.1" 200 939 [django.server:161]
+INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360 [django.server:161]
+INFO "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545 [django.server:161]
+INFO "GET /static/admin/css/fonts.css HTTP/1.1" 200 423 [django.server:161]
+INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876 [django.server:161]
+WARNING Not Found: /favicon.ico [django.request:224]
+WARNING "GET /favicon.ico HTTP/1.1" 404 3610 [django.server:161]
+INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692 [django.server:161]

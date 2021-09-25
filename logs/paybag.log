@@ -2084,3 +2084,32 @@ main.models.User.DoesNotExist: User matching query does not exist.
 
 [2021-09-18 06:52:33] INFO [market] request market data
 [2021-09-18 06:52:33] INFO "GET /market/ HTTP/1.1" 200 4568
+[2021-09-25 17:36:54] INFO Watching for file changes with StatReloader
+[2021-09-25 17:36:57] INFO "GET /admin/ HTTP/1.1" 302 0
+[2021-09-25 17:36:57] INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218
+[2021-09-25 17:37:01] INFO "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[2021-09-25 17:37:01] INFO "GET /admin/ HTTP/1.1" 200 8359
+[2021-09-25 17:37:06] WARNING Not Found: /
+[2021-09-25 17:37:06] WARNING "GET / HTTP/1.1" 404 3559
+[2021-09-25 17:37:11] WARNING Not Found: /
+[2021-09-25 17:37:11] WARNING "GET / HTTP/1.1" 404 3559
+[2021-09-25 17:37:53] WARNING Not Found: /
+[2021-09-25 17:37:53] WARNING "GET / HTTP/1.1" 404 3559
+[2021-09-25 17:37:53] WARNING Not Found: /
+[2021-09-25 17:37:53] WARNING "GET / HTTP/1.1" 404 3559
+[2021-09-25 17:38:07] INFO Watching for file changes with StatReloader
+[2021-09-25 17:38:16] INFO "GET /admin/ HTTP/1.1" 200 8359
+[2021-09-25 17:39:20] INFO Watching for file changes with StatReloader
+[2021-09-25 17:39:22] INFO "GET /admin/ HTTP/1.1" 200 8359
+[2021-09-25 17:39:28] INFO "GET /admin/ HTTP/1.1" 302 0
+[2021-09-25 17:39:29] INFO "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218
+[2021-09-25 17:39:29] INFO "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[2021-09-25 17:39:29] INFO "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[2021-09-25 17:39:29] INFO "GET /static/admin/css/login.css HTTP/1.1" 200 939
+[2021-09-25 17:39:29] INFO "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[2021-09-25 17:39:29] INFO "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+[2021-09-25 17:39:30] INFO "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[2021-09-25 17:39:30] INFO "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[2021-09-25 17:39:30] WARNING Not Found: /favicon.ico
+[2021-09-25 17:39:30] WARNING "GET /favicon.ico HTTP/1.1" 404 3610
+[2021-09-25 17:39:31] INFO "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
