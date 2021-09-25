@@ -6,7 +6,7 @@ from .models import *
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['email', 'password', 'phone', 'address', 'count', 'stamp', 'isBlocked', 'uid', 'coupon', 'createdAt', 'updatedAt']
+        fields = ['name', 'phone', 'count', 'stamp', 'isBlocked', 'uid', 'coupon', 'createdAt', 'updatedAt']
 
 class CardSerializer(serializers.ModelSerializer):
     class Meta:
@@ -29,4 +29,4 @@ class HistorySerializer(serializers.ModelSerializer):
 class MarketSerializer(serializers.ModelSerializer):
     class Meta:
         model = Market
-        fields = ['mid', 'marketName', 'count', 'stock', 'address', 'latitude', 'longitude', 'createdAt', 'updatedAt']
+        fields = ['mid', 'marketName', 'count', 'stock', 'address', 'latitude', 'longitude', 'createdAt', 'updatedAt', 'lentcount', 'returncount']
